@@ -2,26 +2,20 @@ package com.hemu.rest.webservices.restfulwebservices.versioning;
 
 public class PersonV2 {
 
-	private String firstname;
-	private String lastname;
+	private Name name;
 
-	public PersonV2(String firstname, String lastname) {
+	public PersonV2(Name name) {
 		super();
-		this.firstname = firstname;
-		this.lastname = lastname;
+		this.name = name;
 	}
 
-	public String getFirstname() {
-		return firstname;
-	}
-
-	public String getLastname() {
-		return lastname;
+	public Name getName() {
+		return name;
 	}
 
 	@Override
 	public String toString() {
-		return "PersonV2 [firstname=" + firstname + ", lastname=" + lastname + "]";
+		return "PersonV2 [name=" + name + "]";
 	}
 
 }
